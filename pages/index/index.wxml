@@ -1,4 +1,17 @@
 <view class="content">
-    <view class="header"></view>
-    <view></view>
+    <view class="items">
+        <view wx:for="{{info}}" wx:for-index="k" wx:for-item="v">
+            <view class="item">
+                <image style="width: 185px; height: 180px;vertical-align:middle; background-color: #eeeeee;" mode="" src="{{v.profile}}"></image>
+                <view class="title">{{v.title}}</view>
+                <view class="goods_info">
+                    <view class="money">{{v.money}}</view>
+                    <view class="money_e">{{v.money_e}}</view>
+                </view>
+                <view class="fav_num fr">
+                    55<image style="width:16px;height:16px;background:#ddd;" mode=""src="images/shoucang.png"></image>
+                </view>
+            </view>
+        </view>
+    </view>
 </view>
